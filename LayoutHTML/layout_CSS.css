@@ -1,5 +1,6 @@
 body{
-    background-color: lightslategrey;
+    height: 100%;
+    width: 100%;
 }
 
 h1{
@@ -9,33 +10,36 @@ h1{
 .cabecalho{
     color: white;
     background-color: tomato;
-    text-align: center;
+    grid-area: cabecalho;
+    padding-left: 10px;
 }
 
 .navbar{
     display: flex;
     background-color: black;
+    grid-area: menu;
+    padding-left: 10px;
+    margin-bottom: 5px;
 }
 
 .navbaritem{
     background-color: tomato;
     color: white;
-    margin: 3pt;
-    padding-left: 3pt;
-    padding-right: 3pt;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .conteudo{
     background-color: tomato;
-    padding: 5px 20% 5px 20%;
+    grid-area: central;
 }
 
 .conteudoitem{
     background-color: black;
     color: white;
     text-align: justify;
-    padding-top: 5pt;
-    padding-bottom: 5pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 20%;
     padding-right: 20%;
     margin-bottom: 5px;
@@ -43,4 +47,21 @@ h1{
 
 .container {
     display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 5% auto;
+    grid-template-areas: 
+    "cabecalho cabecalho cabecalho"
+    "menu menu menu"
+    "esquerda central direita";
+    height: 100%;
+}
+
+.lateralEsquerda {
+    background-color: lightgreen;
+    grid-area: esquerda;
+}
+
+.lateralDireita {
+    background-color: lightgreen;
+    grid-area: direita;
 }
