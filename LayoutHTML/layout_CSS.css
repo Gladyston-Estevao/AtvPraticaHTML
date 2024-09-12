@@ -5,6 +5,7 @@ body{
 
 h1{
     margin-block-end: 0pt;
+    text-align: center;
 }
 
 .cabecalho{
@@ -57,11 +58,11 @@ h1{
 }
 
 .lateralEsquerda {
-    background-color: lightgreen;
+    background-color: lightgray;
     grid-area: esquerda;
 }
 
 .lateralDireita {
-    background-color: lightgreen;
+    background-color: lightgray;
     grid-area: direita;
 }
