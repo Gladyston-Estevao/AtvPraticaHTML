@@ -3,47 +3,41 @@ body{
     width: 100%;
 }
 
-h1{
-    margin-block-end: 0pt;
-    text-align: center;
-}
-
 .cabecalho{
     color: white;
     background-color: tomato;
     grid-area: cabecalho;
-    padding-left: 10px;
+    margin-block-end: 0px;
+    text-align: center
 }
 
 .navbar{
     display: flex;
-    background-color: black;
+    background-color: lightgray;
     grid-area: menu;
-    padding-left: 10px;
-    margin-bottom: 5px;
-    justify-content: space-around;
+    margin-bottom: 2px;
+    justify-content: space-around; /*Afastamento dos Cursos*/
 }
 
 .navbaritem{
     background-color: tomato;
     color: white;
     margin-right: 10px;
-    padding: 5px;
+    padding: 9px;
 }
 
-.conteudo{
+.conteudo {
     background-color: tomato;
     grid-area: central;
 }
 
-.conteudoitem{
-    background-color: black;
-    color: white;
-    text-align: justify;
+.conteudoitem {
     padding-top: 5px;
     padding-bottom: 5px;
+    color: black;
     padding-left: 20%;
     padding-right: 20%;
+    text-align: justify;
     margin-bottom: 5px;
 }
 
@@ -56,14 +50,30 @@ h1{
     "menu menu menu"
     "esquerda central direita";
     height: 100%;
+    border: solid 3px black;
 }
 
 .lateralEsquerda {
-    background-color: lightgray;
+    background-color: tomato;
     grid-area: esquerda;
+    margin: 2px;
 }
 
 .lateralDireita {
-    background-color: lightgray;
+    background-color: tomato;
     grid-area: direita;
+    margin: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
 }
