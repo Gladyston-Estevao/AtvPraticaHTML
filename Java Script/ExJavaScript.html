@@ -69,6 +69,7 @@
         for(var cont = 0; cont < vetorNum.length; cont++){
             soma += vetorNum[cont];
         }
+        alert('some de ' + vetorNum.length + ' elementos: ' + soma);
     }
 
     function tabuada7(){
@@ -80,10 +81,37 @@
         }
     }
 
-    alert('some de ' + vetorNum.length + ' elementos: ' + soma);
-    
+    function tabuada(valor){ 
+        //Tabuada generica usando DO - WHILE//
+
+        var cont = 0;
+        do {
+            var multiplicacao = cont * valor;
+            alert(valor + ' x ' + cont + ' = ' + multiplicacao);
+            cont++;
+        }while(cont < 11);
+    } 
+
+    function testeTabuada(){
+        tabuada(parseInt(prompt('Informe um valor de 1 a 10:')))
+    }
+
+    function exibirFrutas(){
+        var frutas = ['Nabana', 'Çama', 'Avu', 'Mango'];
+        for (var  cont = 0; cont < frutas.length; cont++){
+            alert(frutas[cont]);
+        }
+    }
+
+    function inverteVetor(vetor){
+        var vetorInvertido = [];
+
+        for(var cont = vetor.length - 1;){
+            
+        }
+    }
 </script>
 <body>
-   <button onclick="tabuada7()">Iniciar</button>
+   <button onclick="exibirFrutas()">Iniciar</button>
 </body>
 </html>
