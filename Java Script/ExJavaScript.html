@@ -71,10 +71,19 @@
         }
     }
 
+    function tabuada7(){
+        var cont = 0; //Variavel Contadora
+        while (cont < 11){
+            var multiplicacao = 7 * cont;
+            alert("7 x " + cont + ' = ' + multiplicacao);
+            cont++;
+        }
+    }
+
     alert('some de ' + vetorNum.length + ' elementos: ' + soma);
     
 </script>
 <body>
-   <button onclick="vetor()">Iniciar</button>
+   <button onclick="tabuada7()">Iniciar</button>
 </body>
 </html>
