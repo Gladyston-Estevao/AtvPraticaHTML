@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animes</title>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <h1>REGISTRO DE ANIMES</h1>
+        <form action="">
+            <label for="nome">Nome do Anime: </label>
+            <input type="text" name="nome"> <br><br>
+
+            <label for="genero"></label>
+            <select name="genero" id="genero0">
+                <option value="terror">Terror </option>
+                <option value="comedia">Comédia </option>
+                <option value="romance">Romance </option>
+                <option value="ação">Ação </option>
+                <option value="isekai">Isekai </option>
+                <option value="outros">Outros </option>
+            </select> <br><br>
+
+            <label for="alancamento">Ano de Lançamento: </label>
+            <input type="number" name="alancamento"> <br><br>
+
+            <label for="nota">Nota (0 a 10): </label>
+            <input type="number" name="nota" min="0" max="10" > <br><br>
+
+            <input type="submit" value="Incluir Anime">
+        </form>
+
+    <h2>Animes Cadastrados</h2>
+    <table id=""></table>
+
+</body>
+</html>
